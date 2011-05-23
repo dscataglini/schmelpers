@@ -1,0 +1,22 @@
+= Schmelpers
+
+This is a collection of smart helpers to make development easy and effective
+
+== Install
+
+  gem install schmelpers
+
+== Usage
+
+Sh.include takes the type of include followed by the local path to the file
+and optional remote path (cdn)
+When there is no internet connection it will use the local path. 
+When there is an internet connection it will use the cdn url.
+This helps a lot when developing and internet connection is not reliable.
+
+  Sh.include(:js, local_path [, cdn_url])
+  Sh.include(:css, local_path [, cdn_url])
+  # => When internet connection is not present it will use the local 
+
+  Sh.include(:async, local_path [, cdn_url])
+  # => Same as above but it includes the javascript(s) asyncronously

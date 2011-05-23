@@ -1,0 +1,3 @@
+module Schmelpers
+  # Your code goes here...
+end
